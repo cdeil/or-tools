@@ -1,5 +1,5 @@
 FROM ortools/make:archlinux_swig AS env
-RUN pacman -Syu --noconfirm python python-pip
+RUN pacman -Syu --noconfirm python python-pip python-wheel
 
 FROM env AS devel
 WORKDIR /home/lib
